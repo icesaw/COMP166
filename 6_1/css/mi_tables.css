@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 6
+   Case Problem 1
+
+      Marlin Internet Pricing
+      Author: Alexey Milovanov
+      Date: 2.28.18  
+
+Filename:         mi_tables.css
+
+*/
+
+/* Table Styles */
+table#pricing{
+	background: -webkit-linear-gradient(rgb(190,215,255),rgb(0,0,0));
+	background: -o-linear-gradient(rgb(190,215,255), rgb(0,0,0));
+	background: -moz-linear-gradient(rgb(190,215,255),rgb(0,0,0));
+	background: linear-gradient(rgb(190,215,255), rgb(0,0,0));
+	border: 5px solid gray;
+}
+
+table#pricing th, table#pricing td{
+	border: 3px solid gray;
+	line-height: 1.4em;
+	padding: 8px;
+}
+th {
+	background-color: black;
+	color: rgb(130,210,255);
+	font-weight: normal;
+}
+
+td{
+	color: white;
+	font-size:0.9em;
+	text-align: top;
+}
+
+/* Column Styles */
+table #firstCol{
+	width:24%;
+}
+table #dataCols{
+	width:19%;
+}
+
+
+/* Table Header Styles */
+
+table#pricing thead tr{
+	height: 60px;
+	
+}
+tr#info th:first-of-type{
+	font-size: 2em;
+}
+tr#info th:not(:first-of-type){
+	background-color: transparent;
+	color: black;
+}

@@ -1,0 +1,201 @@
+@charset "utf-8";
+
+
+@font-face {
+   font-family: Speeder;
+   src: url(../fonts/maxi_l_s.woff) format('woff'), 
+        url(../fonts/maxi_l_s.ttf) format('truetype');
+}
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 6
+   Case Problem 1
+
+   Marlin Internet General Style Sheet
+  
+   Filename:         mi_styles.css
+
+*/
+
+
+/* HTML and Body styles */
+
+html {
+   background: rgb(45, 110, 154);
+   font-family: Verdana, Geneva, sans-serif;
+   height: 100%;
+}
+
+body {
+   background-color: rgb(213, 241, 255);
+   box-shadow: rgb(51, 51, 51) 10px 0px 40px, rgb(51, 51, 51) -10px 0px 40px;
+   border-left: 1px solid rgb(3, 51, 86);
+   border-right: 1px solid rgb(3, 51, 86);
+   min-height: 100%;   
+   margin: 0px auto;
+   min-width: 320px;
+   max-width: 1024px;   
+   width: 100%;
+}
+
+
+/* Header styles */
+
+header {
+   background: linear-gradient(to right, rgb(166, 222, 254) 20%, rgb(3, 51, 86));
+   border-bottom: 1px solid rgb(3, 51, 86);
+}
+
+header img#logoimg {
+   display: block;
+   margin: 0px auto;
+   width: 100%;
+}
+
+/* Navigation list styles */
+
+header nav ul {
+   background: linear-gradient(to right, rgb(166, 222, 254) 20%, rgb(3, 51, 86)); 
+   width: 100%;
+}
+
+header nav ul li {
+   font-size: 1em;   
+}
+
+header nav ul li a {
+   color: rgb(231, 231, 231);
+   text-shadow: rgb(51, 51, 51) 0px 0px 1px, rgb(51, 51, 51) 0px 0px 8px;
+   display: block;
+   padding: 5px 20px;
+   width: 100%;
+}
+
+header nav ul li a:hover {
+   color: white;
+   background-color: rgb(3, 51, 86);
+}
+
+a#navicon {
+   display: none;
+}
+
+/* Article Styles */
+
+article {
+   margin: 40px auto;
+   width: 85%;
+}
+
+article h1 {
+   color: rgb(33, 88, 132);
+   text-shadow: white -2px 0px 0px, rgb(151, 151, 151) -14px 0px 8px;
+   font-family: Speeder;
+   font-weight: normal;
+   font-size: 1.5em;
+   font-style: oblique;
+   letter-spacing: 0.03em;
+   line-height: 1.2em;
+   margin-bottom: 20px;
+}
+
+article p {
+   line-height: 1.5;
+   margin-bottom: 30px;
+}
+
+
+/* Footer styles */   
+
+footer {
+   color: white;    
+   background: linear-gradient(to bottom, rgb(3, 51, 86), black);
+   font-size: 0.9em;  
+   font-style: normal;
+}
+
+footer nav ul {
+   float: left;
+   padding: 30px;
+   width: 25%;
+}
+
+footer nav ul a {
+   color: white;
+}
+
+footer nav ul a:hover {
+   text-decoration: underline;
+}
+
+footer img.clipart {
+   float: left;
+   display: block;
+   width: 25%;
+   position: relative;
+   top: -60px;
+   left: -20px
+}
+
+footer::after {
+   display: table;
+   content: "";
+   clear: both;
+}
+
+/* ===============================
+   Mobile Styles: 0px to 640px 
+   ===============================
+*/
+@media only screen and (max-width: 640px) {
+
+   
+   a#navicon {
+      display: block;
+   }
+   
+   header nav {
+      padding-bottom: 15px;
+   }
+   
+   header nav ul {
+      display: none;
+   }
+   
+   header nav ul li {
+      font-size: 1em;
+      line-height: 1.3em;
+      height: 1.3em;
+   }
+   
+   a#navicon:hover+ul, header nav ul:hover {
+      display: block;
+   }
+   
+   header img#logoimg {
+      width: 100%;
+   }
+}
+
+/* =============================================
+   Tablet and Desktop Styles: greater than 640px
+   =============================================
+*/
+@media only screen and (min-width: 641px) {
+
+   
+   
+   header nav ul {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+      -webkit-justify-content: center;
+      justify-content: center;
+   }
+   
+   header nav ul li {
+      -webkit-flex: 0 1 auto;
+      flex: 0 1 auto;
+   }
+}

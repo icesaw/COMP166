@@ -1,0 +1,28 @@
+/*
+    New Perspectives on HTML5 and CSS3, 7th Edition
+    Tutorial 7
+    Case Problem 2
+    Spice Bowl Payment Form
+      Author: Alexey Milovanov
+      Date:   3.8.18
+      18SP-COMP-166-800RL  
+
+   Filename: sb_validate.css
+
+*/
+
+
+/* Validation Styles */
+input:focus:not([type='radio']) {
+       background-color: rgb(255, 218, 165); 
+}
+
+input:focus:not([type='radio']) {
+       background: rgb(215, 255, 215) url(../img/sb_valid.png) bottom right
+no-repeat;
+}
+
+input:focus:invalid:not([type='radio']) {
+       background: rgb(215, 245, 215) url(../img/sb_invalid.png) bottom right
+no-repeat;
+}
