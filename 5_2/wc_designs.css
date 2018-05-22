@@ -1,0 +1,245 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 5
+   Case Problem 2
+   
+   Filename: wc_designs.css
+
+   This file design style used by all screen sizes for
+   the Willet Creek Golf Course pages
+
+*/
+
+
+/* =============================================
+	Base styles used by All Screens
+   =============================================
+*/
+
+
+/* HTML and Body Styles */
+
+html {
+   background-color: rgb(181, 181, 181);
+   font-family: "Century Gothic", sans-serif;
+   font-size: 12px;
+}
+
+body {
+   background: white;
+   box-shadow: rgb(65, 70, 64) 10px 0px 10px,  rgb(65, 70, 64) -10px 0px 10px;
+   margin: 0px auto;
+   max-width: 1024px;
+}
+
+body > header {
+   background-color: rgba(191,219,188,1.00);
+   width: 100%;
+}
+
+body header > img {
+   display: block;
+   margin: 0px auto;
+   width: 75%;
+   max-width: 500px;
+}
+
+/* Horizontal Navigation Styles */
+
+nav.horizontal {
+   background-color: rgb(91, 91, 91);
+}
+
+nav.horizontal ul li {
+   line-height: 2em;
+   padding-left: 10px;
+   width: 100%;
+}
+
+nav.horizontal ul li a {
+   color: white;
+   display: block;
+}
+
+nav.horizontal::after {
+   content: "";
+   display: table;
+   clear: both;
+}
+
+/* Section Stats Styles */
+
+section#stats {
+   padding: 10px 0px 10px 10px;
+}
+
+section#stats h1 {
+   font-size: 1.5em;
+   text-align: center;
+}
+
+section#stats h2 {
+   font-size: 1.2em;
+   margin-top: 10px;
+}
+
+section#stats ul {
+   margin-top: 5px;
+}
+
+section#stats ul li {
+   line-height: 1.4em;
+}
+
+/* Article Summary Styles */
+
+
+article section#summary img.holeimg {
+   display: block;
+   float: right;
+   width: 30%;
+}
+
+article section#summary p {
+   font-size: 1.3em;
+   line-height: 1.2em;
+   margin: 15px 5px 10px 10px;
+}
+
+
+/* Hole Navigation List Styles */
+
+nav#hole_list {
+   background-color: rgb(184,204,167);
+}
+
+nav#hole_list h1 {
+   font-size: 2em;
+   text-align: center;
+   margin: 10px 0px;
+   letter-spacing: 3px;
+   text-shadow: white 3px 3px 2px;
+}
+
+nav#hole_list ul li {
+   float: left;
+   width: 30px;
+   height: 30px;
+   text-align: center;
+   border-radius: 15px;
+   background-color: rgb(91, 91, 91);
+   margin: 8px;
+   line-height: 30px;
+   -webkit-filter: drop-shadow(1px 1px 2px white);
+   filter: drop-shadow(1px 1px 2px white);
+}
+
+nav#hole_list ul li#current {
+   background-color: rgb(127,35,40);
+}
+
+nav#hole_list ul li a {
+   color: white;
+}
+
+/* Aside Styles */
+
+aside {
+   border-top: 5px solid rgb(151, 151, 151);
+}
+
+aside div {
+   width: 90%;
+   margin: 10px;
+   border: 1px solid rgb(101, 151, 101);
+   -moz-border-radius: 15px;
+   -webkit-border-radius: 15px;
+   border-radius: 15px;
+}
+
+aside div h1 {
+   font-size: 1.2em;
+   line-height: 2em;
+   text-align: center;
+   border-bottom: 1px solid rgb(101, 151, 101);
+   border-radius: 15px 15px 0px 0px;
+}
+
+aside div p {
+   font-size: 1.1em;
+   margin: 10px;
+   text-align: center;
+}
+
+#div1 h1 {
+   background-color: rgb(88, 87, 255);
+   color: rgb(241, 255, 241);
+}
+
+#div1 {
+   background-color: rgb(158, 158, 255);
+}
+
+#div2 h1 {
+   background-color: rgb(128, 128, 0);
+   color: rgb(241, 255, 241);
+}
+
+#div2 {
+   background-color: rgb(228, 228, 30);
+}
+
+#div3 h1 {
+   background-color: rgb(207, 66, 207);
+   color: rgb(241, 255, 241);
+}
+
+#div3 {
+   background-color: rgb(232, 156, 232);
+}
+
+#div4 h1 {
+   background-color: rgb(103, 160, 103);
+   color: rgb(241, 255, 241);
+}
+
+#div4 {
+   background-color: rgb(172, 204, 172);
+}
+
+#div4 h1 {
+   background-color: rgb(103, 160, 103);
+   color: rgb(241, 255, 241);
+}
+
+#div5 {
+   background-color: rgb(191, 191, 191);
+}
+
+#div5 h1 {
+   background-color: rgb(101, 101, 101);
+   color: rgb(241, 255, 241);
+}
+
+#div6 {
+   background-color: rgb(207,147,167);
+}
+
+#div6 h1 {
+   background-color: rgb(115,3,5);
+   color: rgb(241, 255, 241);
+}
+
+/* Footer Styles */
+
+body > footer {
+   background-color: rgb(91, 91, 91);
+   color: white;
+   font-size: 0.85em;
+   text-align: center;
+   height: 20px;
+   line-height: 20px;
+   width: 100%;
+}

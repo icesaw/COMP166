@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+/*
+New Perspectives on HTML5 and CSS3, 7th Edition
+Tutorial 4
+Case Problem 2
+Save your Fork Sample Recipe
+Author: Alexey Milovanov
+Date:  2.17.18  
+Filename: sf_effects.css
+*/
+
+/* Body Header Styles */
+
+body {
+  box-shadow: rgb(51, 51, 51) 10px 10px 50px, rgb(51, 51, 51) -10px 0px 50px;
+}
+
+/* Navigation Tabs List Styles */
+
+body > header nav.tabs {
+  background: url(../img/sf_back1.png) no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+body > header nav.tabs li {
+  transform: perspective(50px) rotateX(20deg);
+}
+
+body > header nav.tabs li:hover {
+  background-color: rgb(231, 231, 231);
+}
+
+/* Left Section Styles */
+
+section#left nav.vertical {
+  border: 1px solid rgb(20, 167, 170);
+  border-radius: 25px;
+}
+
+section#left nav.vertical h1 {
+  border-radius: 25px 25px 0 0;
+}
+
+/* Center Article Styles */
+
+section#center article {
+  background: radial-gradient(white 30%, rgb(151, 151, 151));
+  border: 1px solid rgb(151, 151, 151);
+  border-radius: 50px;
+  box-shadow: 10px 10px 20px rgb(51, 51, 51);
+}
+
+/* Blockquote Styles */
+
+blockquote {
+  background: url(../img/sf_speech.png) no-repeat;
+  background-size: 100% 100%;
+  filter: drop-shadow(5px 5px 10px rgb(51, 51, 51));
+}
+
+cite img {
+  border-radius: 50%;
+}
