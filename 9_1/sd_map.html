@@ -1,0 +1,72 @@
+   <!--
+    New Perspectives on HTML5 and CSS3, 7th Edition
+    Tutorial 9
+    Case Problem 1
+    
+    Planisphere Web Page
+    Author: Alexey Milovanov
+    18SP-COMP-166-800RL
+   
+
+    Filename: sd_map.html
+   -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+   <meta charset="utf-8" />
+   <title>Star Dust Stories: Using a Planisphere</title>
+   <link href="sd_base.css" rel="stylesheet" />
+   <link href="sd_layout.css" rel="stylesheet" />
+   <script src="sd_mapper.js" defer></script>    
+</head>
+
+<body>
+   <header>
+      <nav class="horizontal">
+         <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Astronomers</a></li>
+            <li><a href="#">Moons</a></li>
+            <li><a href="#">Planets</a></li>
+            <li><a href="#">Stars</a></li>
+            <li><a href="#">Physics</a></li>
+         </ul>
+      </nav>
+      <img src="sd_logo.png" alt="SkyWeb" />
+   </header>
+   <section id="left">
+      <article>
+         <h1>The Planisphere</h1>
+         <p>A <strong>planisphere</strong> is a visual aid to astronomers and stargazers. 
+            It consists of two disks: One displays all of the visible 
+            constellations in the night sky, and the other covers the first 
+            and contains a window that indicates the portion of the sky currently 
+            visible. The second disk is then rotated to match the current date and 
+            time. Planispheres come in a variety of sizes and types. The important 
+            thing to remember is that you must have a planisphere that matches 
+            the longitude of your stargazing location.
+         </p>
+         <p>On the right is an online planisphere. It consists of two images laid on
+            top of one another. The top image is the viewing disk of the planisphere. The
+            bottom image contains the sky map. This planisphere is 
+            automatically rotated for you, displaying the current date and time 
+            and visible constellations for observers at a longitude of 
+            40<sup>&deg;</sup> North. To use a planisphere, hold directly overhead with
+            the arrow facing north as indicated on the viewing disk.</p>
+      </article>
+   </section>
+   <section id="right">
+      <div id="planisphere">   
+         <img id="mask" src="sd_mask.png" alt="" />      
+         <div id="timeStamp">March 1, 2018 4:53 PM</div>
+      </div> 
+   </section>
+   <footer>
+      Star Dust Stories &copy; 2018 English (US) <span><a href="#">About</a>
+      <a href="#">Developers</a> <a href="#">Privacy</a> 
+      <a href="#">Terms</a> <a href="#">Help</a></span>
+   </footer>
+</body>
+</html>

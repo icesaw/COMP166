@@ -1,0 +1,260 @@
+@charset "utf-8";
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 10
+   Case Problem 1
+   
+
+   Trophy Case Sports Layout Style Sheet
+
+   Filename: tc_styles.css
+   
+*/
+
+
+/* HTML and Body Styles */
+
+html {
+   background: white;
+   font-family: Verdana, Geneva, sans-serif;
+   font-size: 12px;
+}
+
+body {
+   position: relative;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-flow: row wrap;
+   flex-flow: row wrap;   
+   background: white;
+   max-width: 1024px;
+   min-width: 420px;
+   margin: 0px auto;
+   border: 1px solid rgb(221, 221, 221);
+}
+
+p {
+   font-size: 1.2em;
+   line-height: 1.4em;
+   margin: 15px;
+}
+
+
+/* Top Navigation Styles */
+
+nav#topList ul {
+   position: absolute;
+   top: 20px; right: 0px;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-flow: row nowrap;
+   flex-flow: row nowrap;
+   -webkit-justify-content: flex-end;
+   justify-content: flex-end;
+   -webkit-align-items: center;
+   align-items: center;
+   background-color: transparent;
+   height: 50px;
+}
+   
+nav#topList ul li {
+   -webkit-flex: 0 1 80px;
+   flex: 0 1 80px;   
+   margin: 10px;
+}
+
+nav#topList ul li a {
+   color: rgb(141, 33, 12);
+   display: block;
+   font-size: 1.1em;
+   text-align: center;
+   padding: 50% 0%;
+}
+
+nav#topList ul li a:hover, nav#topList ul li a:active {
+   color: rgb(255, 0, 0);
+   text-shadow: 0px 0px 2px rgb(172, 128, 84), 0px 0px 15px rgb(172, 128, 84);
+}
+
+/* Header Styles */
+
+body > header {
+   width: 100%;
+}
+
+body > header > img#imgLogo {
+   display: block;
+   width: 100%;
+}
+
+
+/* Middle Navigation Styles */
+
+nav#middleList ul {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-flow: row nowrap;
+   flex-flow: row nowrap;
+   -webkit-justify-content: center;
+   justify-content: center;
+   -webkit-align-items: center;
+   align-items: center;
+   background-color: rgb(109, 80, 53);
+   height: 40px;
+}
+   
+nav#middleList ul li {
+   -webkit-flex: 0 1 80px;
+   flex: 0 1 80px;   
+   margin: 10px;
+}
+
+nav#middleList ul li a {
+   color: white;
+   display: block;
+   font-size: 1.2em;
+   text-align: center;
+   padding: 50% 0%;
+}
+
+nav#middleList ul li a:hover, nav#middleList ul li a:active {
+   color: rgba(255, 255, 255, 0.9);
+   text-shadow: 0px 0px 2px black, 0px 0px 8px black;
+}
+
+
+/* Section Styles */
+
+section {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-flow: row wrap;
+   flex-flow: row wrap;   
+   -webkit-align-items: center;
+   align-items: center;
+   margin: 20px 40px;
+}
+
+section h1 {
+   font-size: 2.9em;
+   font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+   color: rgb(159, 31, 7);
+   letter-spacing: 0.1em;
+   margin: 20px 0px;
+   width: 100%;
+}
+
+/* Cart Table Styles */
+
+div#cart {
+   -webkit-flex: 1 1 600px;
+   flex: 1 1 600px;   
+}
+
+div#cart table {
+   font-size: 1.4em;
+   border-collapse:collapse;
+}
+
+
+div#cart table th, div#cart table td {
+  vertical-align: top;
+  font-weight: normal;
+  line-height: 1.3em;
+}
+
+div#cart table tr:nth-of-type(even) {
+   background-color: rgb(221, 204, 177);
+}
+
+div#cart table tr td:nth-of-type(3), div#cart table tr td:nth-of-type(4), div#cart table tr td:nth-of-type(5) {
+   text-align: right;
+}
+
+div#cart table th {
+   background-color: rgb(109, 80, 53);
+   color: rgb(231, 231, 231);
+   padding: 10px;
+}
+
+div#cart table td {
+   padding: 10px;
+}
+
+div#cart table tr:last-of-type {
+   border-top: 6px double rgb(109, 80, 53);
+   background-color: white;
+   font-size: 1.3em;
+}
+
+div#cart table tr:last-of-type td:first-of-type {
+   text-align: right;
+}
+
+   
+/* Button Style */
+
+section label {
+   -webkit-flex: 1 1 100px;
+   flex: 1 1 100px;   
+}
+
+section label img {
+   display: block;
+   width: 100px;
+   margin: 0px auto 10px;
+}
+
+section label span {
+   display: block;
+   font-size: 1.2em;
+   text-align: center;
+   color: rgb(141, 33, 12);   
+}
+
+
+
+
+/* Footer Styles */
+
+footer {
+   width: 100%;
+}
+
+footer p {
+   color: rgb(211, 211, 211);
+   font-size: 0.9em;
+   text-align: center;
+   background-color: rgb(52, 55, 49);
+   margin: 0px;
+   padding: 10px 0px;
+}
+
+
+
+/* Bottom Navigation Styles */
+
+nav#bottom {
+   color: rgb(211, 211, 211);
+   padding: 15px;   
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-flow: row nowrap;
+   flex-flow: row nowrap;
+   -webkit-justify-content: center;
+   justify-content: center;
+   background: linear-gradient(to bottom left, rgb(109, 80, 53) 50%, rgb(141, 33, 12));
+}
+
+nav#bottom ul {
+   flex: 0 1 150px;
+}
+
+nav#bottom ul li {
+   font-size: 1em;
+   line-height: 1.8em;
+}
+
+nav#bottom ul a {
+   color: white;
+}

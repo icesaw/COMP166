@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+   Subsistence Shopping Cart
+   Author: Alexey Milovanov
+   Date:   4.25.18
+
+   Filename: sub_menu.html
+   
+-->
+
+    <title>Subsistence Sandwich Shopping Cart</title>
+    <meta charset="utf-8" />
+
+    <link href="css/sub_base.css" rel="stylesheet" />
+    <link href="css/sub_layout.css" rel="stylesheet" />
+
+    <script src="js/sub_cart.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div>
+            <label for="mBox">Member Login</label>
+            <input id="mBox" type="text" />
+            <label for="mpwd">Password</label>
+            <input id="mpwd" type="password" />
+        </div>
+        <img src="img/sub_logo.png" alt="Subsistence" />
+        <nav class="horizontal">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Online Menu</a></li>
+                <li><a href="#">Locations</a></li>
+                <li><a href="#">Catering</a></li>
+                <li><a href="#">Employment Opportunities</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <section id="main">
+
+        <h1>Today's Specials</h1>
+        <p>Go to <a href="#">Build Your Own</a> to create your own customized meal toppings and combos.</p>
+
+        <section id="items">
+            <div class="menuItem">
+                <input class="addButton" type="button" value="Add to Order" />
+                <div id="item0">
+                    <img src="img/sub_item_0.png" alt="ham_baguette" />
+                    <h1>Ham and Cheese</h1>
+                    <p>Shaved ham on a 6" toasted baguette with lettuce, tomatoes, muenster cheese, and cucumbers.</p>
+                    <p>Price: $5.95</p>
+                </div>
+            </div>
+            <div class="menuItem">
+                <input class="addButton" type="button" value="Add to Order" />
+                <div id="item1">
+                    <img src="img/sub_item_1.png" alt="veggie_baguette" />
+                    <h1>Veggie</h1>
+                    <p>6" vegetarian on toasted baguette with lettuce, tomatoes, swiss cheese, and cucumbers.</p>
+                    <p>Price: $4.95</p>
+                </div>
+            </div>
+            <div class="menuItem">
+                <input class="addButton" type="button" value="Add to Order" />
+                <div id="item2">
+                    <img src="img/sub_item_2.png" alt="salmon_baguette" />
+                    <h1>Shaved Salmon</h1>
+                    <p>Shaved salmon on a 6" toasted baguette with lettuce and colby cheese.</p>
+                    <p>Price: $6.95</p>
+                </div>
+            </div>
+            <div class="menuItem">
+                <input class="addButton" type="button" value="Add to Order" />
+                <div id="item3">
+                    <img src="img/sub_item_3.png" alt="salami_baguette" />
+                    <h1>Salami</h1>
+                    <p>Shaved salami on a 6" toasted baguette with lettuce, tomatoes, pepperjack cheese, and cucumbers.</p>
+                    <p>Price: $5.95</p>
+                </div>
+            </div>
+            <div class="menuItem">
+                <input class="addButton" type="button" value="Add to Order" />
+                <div id="item4">
+                    <img src="img/sub_item_4.png" alt="ham_bagel" />
+                    <h1>Ham Bagel</h1>
+                    <p>Shaved hame on a sesame bagel with lettuce, tomatoes, and muenster cheese.</p>
+                    <p>Price: $4.95</p>
+                </div>
+            </div>
+            <div class="menuItem">
+                <input class="addButton" type="button" value="Add to Order" />
+                <div id="item5">
+                    <img src="img/sub_item_5.png" alt="salmon_bagel" />
+                    <h1>Salmon Bagel</h1>
+                    <p>Shaved salmon on a rye bagel with green onion cream cheese.</p>
+                    <p>Price: $5.95</p>
+                </div>
+            </div>
+            <div class="menuItem">
+                <input class="addButton" type="button" value="Add to Order" />
+                <div id="item6">
+                    <img src="img/sub_item_6.png" alt="cheese_bagel" />
+                    <h1>Cream Cheese</h1>
+                    <p>Cream cheese and green onion on a rye bagel.</p>
+                    <p>Price: $4.15</p>
+                </div>
+            </div>
+            <div class="menuItem">
+                <input class="addButton" type="button" value="Add to Order" />
+                <div id="item7">
+                    <img src="img/sub_item_7.png" alt="salami_bagel" />
+                    <h1>Salami Bagel</h1>
+                    <p>Shaved salami on a sesame bagel with lettuce, tomatoes and muenster cheese.</p>
+                    <p>Price: $4.95</p>
+                </div>
+            </div>
+        </section>
+
+        <p><input type="button" value="Submit Order" id="finishOrder" /> </p>
+
+    </section>
+
+    <aside id="cart">
+        <h1>Shopping Cart</h1>
+    </aside>
+
+    <nav id="vertical">
+        <ul>
+            <li><a href="#">Today's Specials</a></li>
+            <li class="newgroup"><a href="#">Build Your Own</a></li>
+            <li class="newgroup"><a href="#">Hot Sandwiches</a></li>
+            <li><a href="#">Cold Sandwiches</a></li>
+            <li><a href="#">Wraps</a></li>
+            <li><a href="#">Breakfast Sandwiches</a></li>
+            <li><a href="#">Bagels</a></li>
+            <li><a href="#">Croissants</a></li>
+            <li><a href="#">Soups</a></li>
+            <li><a href="#">Salads</a></li>
+            <li><a href="#">Sides</a></li>
+            <li><a href="#">Drinks</a></li>
+            <li><a href="#">Desserts</a></li>
+            <li class="newgroup"><a href="#">Lunch Combos</a></li>
+            <li><a href="#">Breakfast Combos</a></li>
+            <li><a href="#">Party Trays</a></li>
+            <li><a href="#">Catering Options</a></li>
+            <li class="newgroup"><a href="#">Day-old Bread</a></li>
+            <li><a href="#">Community Meal Programs</a></li>
+            <li><a href="#">School Lunch Programs</a></li>
+        </ul>
+    </nav>
+    <footer>
+        Subsistence &copy; 2018 (US)
+        <span>
+         <a href="#">About</a>
+         <a href="#">Terms</a>
+         <a href="#">Help</a>
+      </span>
+    </footer>
+
+
+</body>
+
+</html>

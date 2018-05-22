@@ -1,0 +1,278 @@
+@charset "utf-8";
+
+/*
+   Subsistence Style Sheet
+
+   Filename:  sub_layout.css 
+
+*/
+
+
+/* HTML and Body Styles */
+
+html {
+    background: linear-gradient(to bottom, rgb(238, 218, 218), rgb(101, 88, 7));
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12px;
+}
+
+body {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-align-content: flex-start;
+    align-content: flex-start;
+    background: rgb(241, 241, 231);
+    max-width: 1024px;
+    min-width: 420px;
+    margin: 0px auto;
+    border: 3px solid rgb(221, 221, 221);
+    box-shadow: 0px 0px 35px rgb(51, 51, 51);
+}
+
+
+/* Header Styles */
+
+header {
+    width: 100%;
+}
+
+header>div {
+    background-color: rgb(91, 91, 91);
+    text-align: right;
+    font-size: 1.4em;
+    padding: 10px 5px;
+}
+
+header>div label {
+    color: rgb(231, 231, 231);
+    display: inline-block;
+    margin-right: 8px;
+}
+
+header>div input {
+    display: inline-block;
+    color: rgb(91, 91, 91);
+    margin-right: 15px;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    margin: 0px;
+}
+
+
+/* Header Navigation Styles */
+
+header nav {
+    background-color: rgba(59, 6, 7, 1.00);
+    margin: 0px;
+}
+
+header nav ul {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-justify-content: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0px;
+}
+
+header nav ul li {
+    font-size: 1em;
+    -webkit-flex: 0 1 auto;
+    flex: 0 1 auto;
+}
+
+header nav ul li a {
+    color: white;
+    display: block;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+header nav ul li a:hover {
+    color: rgb(214, 237, 129);
+}
+
+
+/* Left Navigation Styles */
+
+nav#vertical {
+    width: 100%;
+    background-color: rgb(51, 51, 51);
+}
+
+nav#vertical ul {
+    -moz-column-width: 200px;
+    -webkit-column-width: 200px;
+    column-width: 200px;
+    -moz-column-gap: 10px;
+    -webkit-column-gap: 10px;
+    column-gap: 10px;
+}
+
+nav#vertical ul li.newgroup {
+    margin-top: 10px;
+}
+
+nav#vertical li a {
+    font-size: 1em;
+    color: rgb(241, 241, 241);
+}
+
+nav#vertical li a:hover {
+    color: yellow;
+}
+
+
+/* Main Section Styles */
+
+section#main {
+    -webkit-flex: 1 1 300px;
+    flex: 1 1 300px;
+    -webkit-align-self: flex-start;
+    align-self: flex-start;
+    padding: 25px;
+}
+
+section#main>h1 {
+    width: 100%;
+    font-size: 2.2em;
+    line-height: 2.2em;
+    text-align: center;
+    letter-spacing: 0.2em;
+}
+
+section#main>p {
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+    font-size: 1.2em;
+    line-height: 1.2em;
+}
+
+
+/* Menu Item Styles */
+
+section#items {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    width: 100%;
+}
+
+section#items div.menuItem {
+    -webkit-flex: 1 0 160px;
+    flex: 1 0 160px;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+section#items div.menuItem h1 {
+    text-align: center;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+}
+
+section#items div.menuItem p {
+    font-size: 0.85em;
+    margin: 5px;
+}
+
+section#items div.menuItem div img {
+    display: block;
+    width: 60%;
+    margin: 5px auto;
+}
+
+input#finishOrder {
+    font-size: 1.2em;
+    width: 180px;
+    height: 40px;
+    background-color: rgb(186, 111, 108);
+    border-radius: 25px;
+    color: rgb(241, 241, 241);
+    box-shadow: 0px 0px 25px rgb(51, 51, 51);
+}
+
+
+/* Aside Styles */
+
+aside {
+    -webkit-flex: 0 0 170px;
+    flex: 0 0 170px;
+    background: rgb(246, 231, 192);
+    font-size: 0.86em;
+    padding: 5px;
+}
+
+aside>h1 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+aside>div {
+    width: 100%;
+    border-bottom: 4px double rgb(131, 30, 21);
+    padding: 0px 10px 8px;
+    margin-top: 5px;
+}
+
+aside>div>img {
+    display: block;
+    width: 60%;
+    margin: 5px auto;
+}
+
+aside>div>h1 {
+    text-align: center;
+}
+
+aside>div>p {
+    font-size: 0.8em;
+}
+
+aside>div>span {
+    display: inline-block;
+    font-size: 1em;
+    background-color: rgba(231, 231, 231, 0.5);
+    text-align: right;
+    padding: 4px;
+    box-shadow: 2px 2px 4px rgba(91, 42, 8, 0.7);
+}
+
+aside>div>span::after {
+    content: " order(s)";
+}
+
+
+/* Footer Styles */
+
+footer {
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    background-color: rgb(31, 31, 31);
+    color: rgb(241, 241, 241);
+    width: 100%;
+    padding-left: 15px;
+}
+
+footer span {
+    position: absolute;
+    right: 0px;
+}
+
+footer span a {
+    color: rgb(241, 241, 241);
+    display: inline-block;
+    margin-right: 10px;
+}
